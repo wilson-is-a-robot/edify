@@ -3,7 +3,7 @@ plugins:
   - rubocop-rspec
 
 AllCops:
-  NewCops: disable
+  NewCops: enable
   Exclude:
     - "vendor/**/*"
     - "spec/fixtures/**/*"
@@ -86,6 +86,9 @@ RSpec/NoExpectationExample:
   Enabled: false
 
 Style/Documentation:
+  Enabled: false
+
+Style/OneClassPerFile:
   Enabled: false
 
 Style/EmptyMethod:
