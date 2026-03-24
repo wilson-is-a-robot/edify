@@ -31,6 +31,14 @@ class EdifyConfig
     Rails.application.credentials.dig(:sendgrid, :webhook_verification_key)
   end
 
+  def self.scout_apm_key
+    Rails.application.credentials.dig(:scout, :agent_key)
+  end
+
+  def self.scout_apm_logs_ingest_key
+    Rails.application.credentials.dig(:scout, :logs_ingest_key)
+  end
+
   def self.sentry_dsn
     Rails.application.credentials.dig(:sentry, :dsn)
   end
