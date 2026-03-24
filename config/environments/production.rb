@@ -80,11 +80,11 @@ Rails.application.configure do
   # caching is enabled.
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: ::EdifyConfig.app_url, protocol: "http" }
+  config.action_mailer.default_url_options = { host: ::EdifyConfig.app_url, protocol: "https" }
 
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
-    port: "587",
+    port: "2525",
     authentication: :plain,
     user_name: "apikey",
     password: ::EdifyConfig.sendgrid_api_key,
